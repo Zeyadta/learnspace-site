@@ -21,7 +21,7 @@
 </head>
 <body>
 <h1>Privacy Policy — LearnSpace</h1>
-<p>**Last updated:** August 15, 2026</p>
+<p><strong>Last updated:</strong> September 5, 2026</p>
 <p>**Effective for app version:** 1.0.0+</p>
 <hr>
 <h2>Summary</h2>
@@ -33,15 +33,18 @@
 <tr><td>Display name (optional, chosen in onboarding)</td><td>Yes</td><td>**On your device only**</td><td>No</td></tr>
 <tr><td>Learning progress (XP, streak, mastery, spaced-review queue)</td><td>Yes</td><td>**On your device only**</td><td>No</td></tr>
 <tr><td>App settings (language, age band, sound, Full tier flag)</td><td>Yes</td><td>**On your device only**</td><td>No</td></tr>
-<tr><td>Pronunciation recordings (Full tier, optional)</td><td>Yes, when you tap Record</td><td>**Temporary files on your device**; deleted when you leave the compare sheet or start a new recording</td><td>No</td></tr>
+<tr><td>Audio from pronunciation practice (optional)</td><td>Only while you use the pronunciation features</td><td>**Processed as described in “Microphone & speech recognition” below.** Recordings in compare mode are temporary files on your device; speech-check audio is handled by your device’s built-in speech service and is **never stored or transmitted by LearnSpace**</td><td>LearnSpace: No. Your device’s speech service may process audio as described below.</td></tr>
 <tr><td>Account / email / password</td><td>**No**</td><td>—</td><td>—</td></tr>
 <tr><td>Location</td><td>**No**</td><td>—</td><td>—</td></tr>
 <tr><td>Analytics or advertising IDs</td><td>**No** (current build)</td><td>—</td><td>—</td></tr>
 </tbody></table>
 <hr>
-<h2>Microphone</h2>
-<p>LearnSpace requests microphone access **only** when a learner with **Full** access uses **Record & compare** in a words session. Audio is recorded locally for playback alongside device text-to-speech. We do **not** upload recordings, run cloud speech recognition, or score pronunciation with machine learning in the current version.</p>
-<p>You can deny microphone permission and continue using all other features.</p>
+<h2>Microphone &amp; speech recognition</h2>
+<p>LearnSpace requests microphone access **only** inside pronunciation practice (“Speak it” and **Record &amp; compare** in a words session). There are two modes:</p>
+<li>**Speech check (optional):** with your permission, your **device’s built-in speech recognition service** listens while your child says the word, and the app compares what was heard with the target word to show per-letter feedback. On many devices this runs fully on-device; on others, the platform’s speech service may process the audio using its own services (including cloud processing) **subject to Apple’s or Google’s own privacy policies**. LearnSpace does **not** receive, store, or transmit the audio or the transcript — the transcript is used in memory for scoring only and is not saved.</li>
+<li>**Record &amp; compare (fallback):** if no speech service is available, the app records audio **locally** so your child can listen back. Recordings are temporary files in the app cache and are deleted when you leave the sheet or start a new recording. They are never uploaded.</li>
+<p>If a child pronounces a word correctly, the app awards in-app credits — computed on your device.</p>
+<p>You can deny microphone permission at any time; every other feature keeps working, and pronunciation falls back to record-and-compare or listen-only.</p>
 <hr>
 <h2>Notifications</h2>
 <p>LearnSpace offers an **optional daily learning reminder** you can enable in Settings. If you enable it:</p>
@@ -56,6 +59,7 @@
 <hr>
 <h2>Third-party services</h2>
 <li>**Device text-to-speech (TTS):** Provided by the operating system; subject to Apple/Google platform policies.</li>
+<li>**Device speech recognition (optional pronunciation check):** Provided by the operating system (Google on Android, Apple on iOS). When the platform processes audio off-device, that handling is governed by Apple’s/Google’s own privacy policies — LearnSpace never sees the audio.</li>
 <li>**App stores:** If you purchase **Full**, payment is processed by Apple App Store or Google Play; we receive purchase confirmation only, not payment card details.</li>
 <p>We do not embed third-party advertising SDKs in LearnSpace.</p>
 <hr>
