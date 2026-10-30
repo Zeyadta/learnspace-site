@@ -11,9 +11,11 @@
   h1 { color: #1a5c5c; font-size: 2.2rem; margin-bottom: 0.25em; }
   p.sub { color: #5a6b66; margin-top: 0; }
   .links { margin-top: 2.5rem; display: flex; flex-direction: column; gap: 0.75rem; }
-  a.button { display: inline-block; padding: 12px 28px; border-radius: 999px;
+  .button { display: inline-block; padding: 12px 28px; border-radius: 999px;
              background: #1a5c5c; color: #fff; text-decoration: none; font-weight: 600; }
   a.button.secondary { background: transparent; color: #1a5c5c; border: 1.5px solid #1a5c5c; }
+  .button.soon { background: #e4e9e6; color: #5a6b66; cursor: default; }
+  .button.soon span { display: block; font-weight: 500; font-size: 0.95rem; }
   .ar { direction: rtl; font-size: 1.05rem; }
 </style>
 </head>
@@ -23,8 +25,9 @@
   <p class="ar sub">تعلّم دون اتصال: الرياضيات ومفردات إنجليزي/عربي.</p>
   <div class="links">
     <a class="button" href="https://play.google.com/store/apps/details?id=app.learnspace.mobile">Get it on Google Play</a>
-    <a class="button" href="https://apps.apple.com/app/learnspace/id0000000000">Download on the App Store</a>
-    <a class="button secondary" href="/privacy.html">Privacy Policy / سياسة الخصوصية</a>
+    <!-- App Store: no listing yet. Replace with the real apps.apple.com/app/idNNNNNNNNNN link once App Store Connect assigns the numeric ID. -->
+    <span class="button soon" role="note">Coming soon to the App Store<span lang="ar" dir="rtl">قريبًا على متجر App Store</span></span>
+    <a class="button secondary" href="privacy.html">Privacy Policy / سياسة الخصوصية</a>
   </div>
 </body>
 </html>
